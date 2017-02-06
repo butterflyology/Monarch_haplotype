@@ -1,0 +1,45 @@
+#NEXUS
+[R-package APE, Thu Mar 24 19:09:52 2016]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 16;
+	TAXLABELS
+		Amauris_tartarea
+		Anetia_briarea
+		Anetia_pantheratus
+		Danaus_chrysippus
+		Danaus_erippus
+		Danaus_genutia
+		Danaus_plexippus
+		Euploea_corinna
+		Euploea_mulciber
+		Idea_leuconoe
+		Lycorea_ilione
+		Parantica_melusine
+		Tellervo_zoilus
+		Tirumala_hamata
+		Tirumala_septentrionis
+		Parantica_agleoides
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	Amauris_tartarea,
+		2	Anetia_briarea,
+		3	Anetia_pantheratus,
+		4	Danaus_chrysippus,
+		5	Danaus_erippus,
+		6	Danaus_genutia,
+		7	Danaus_plexippus,
+		8	Euploea_corinna,
+		9	Euploea_mulciber,
+		10	Idea_leuconoe,
+		11	Lycorea_ilione,
+		12	Parantica_melusine,
+		13	Tellervo_zoilus,
+		14	Tirumala_hamata,
+		15	Tirumala_septentrionis,
+		16	Parantica_agleoides
+	;
+	TREE * UNTITLED = [&R] ((((1:0.690007266,(16:0.3335400459,12:0.3335400459):0.3564672201):0.1784252281,((((4:0.3073537283,6:0.3073537283):0.03576263689,(5:0.1849986827,7:0.1849986827):0.1581176824):0.2267927077,(14:0.04675710882,15:0.04675710882):0.5231519641):0.2460293406,((8:0.2343124686,9:0.2343124686):0.2149437709,10:0.4492562395):0.366682174):0.05249408062):0.1315675059,((2:0.219428748,3:0.219428748):0.2610571605,11:0.4804859084):0.5195140916):0,13:1);
+END;

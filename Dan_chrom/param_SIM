@@ -1,0 +1,21 @@
+_mainType mainSimulate
+_outDir /Users/Chris/Desktop/Projects/Danainae/Dan_chrom/Sim_1
+_freqFile <FREQ_FILE>
+_treeFile /Users/Chris/Desktop/Projects/Danainae/Dan_chrom/Danaini.tre
+_logFile Sim_1_log.txt
+_logValue 3
+_maxChrNum <MAX_CHR_NUM>
+_minChrNum <MIN_CHR_NUM>
+<PARAMETERS>
+_epsilonLLimprovement 0.1
+_maxOptimizationIterations -1
+_epsilonLLimprovement 0.1
+_optimizePointsNum 1
+_optimizeIterNum 0
+_simulationsNum 10
+_simulationsIter 1
+_simulationsJumpsStats expStats.txt
+_maxChrNumForSimulations <MAX_CHR_NUM_SIM>
+_branchMul 1
+_simulationsTreeLength <TREE_LENGTH>
+

@@ -1,0 +1,19 @@
+START OF LOG FILE
+chromEvol Version: 2.0. Last updated December 2013
+
+ ---------------------- THE PARAMETERS ----------------------------
+main type: mainSimulate
+tree file: /Users/Chris/Desktop/Projects/Danainae/Dan_chrom/Danaini.tre
+output file: chromEvol.res
+model Type: GENERAL_CHR_MODEL
+ max chromosome number allowed: 45
+ _gainConstR: -999
+ _lossConstR: -999
+ _duplConstR: -999
+ _demiPloidyR: -999
+ _baseNumber: -999
+ _baseNumberR: -999
+
+ -----------------------------------------------------------------
+
+error in generalChrNumModel::init there are no parameters to be included in the model

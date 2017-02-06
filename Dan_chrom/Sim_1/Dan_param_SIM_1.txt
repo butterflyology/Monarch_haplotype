@@ -1,0 +1,27 @@
+_mainType mainSimulate
+_outDir /Users/Chris/Desktop/Projects/Danainae/Dan_chrom/Sim_1
+_freqFile /Users/Chris/Desktop/Projects/Danainae/Dan_chrom/Sim_1/Dan_sim_freq_1.txt
+_treeFile /Users/Chris/Desktop/Projects/Danainae/Dan_chrom/Danaini.tre
+_logFile Sim_1_log.txt
+_logValue 3
+_maxChrNum 45
+_minChrNum 17
+<PARAMETERS>
+_epsilonLLimprovement 0.01
+_maxOptimizationIterations -10
+_epsilonLLimprovement 0.01
+_optimizePointsNum 10,3,1
+_optimizeIterNum 0,2,5
+_simulationsNum 10
+_simulationsIter 10
+_simulationsJumpsStats Sim_1_expStats.txt
+_maxChrNumForSimulations 45
+_branchMul 1
+_simulationsTreeLength 999
+ _gainConstR: 0.01
+ _lossConstR: 0.01
+ _duplConstR: 0
+ _demiPloidyR: 0
+ _baseNumber: -999
+ _baseNumberR: -999
+

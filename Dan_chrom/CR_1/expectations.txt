@@ -1,0 +1,156 @@
+#Nodes with GAIN events with expectation above 0.5
+Tellervo_zoilus: 8.01142
+N3: 1.99018
+N4: 1.25022
+N5: 2.04758
+Amauris_tartarea: 10.9261
+N6: 1.69539
+Parantica_agleoides: 5.31897
+Parantica_melusine: 0.860085
+N8: 2.90324
+N9: 1.8233
+N11: 0.955481
+Danaus_chrysippus: 2.57446
+N12: 1.5518
+Danaus_genutia: 2.37791
+N13: 1.63626
+Danaus_erippus: 1.74095
+N14: 5.51212
+N15: 2.77071
+N16: 1.50977
+Euploea_corinna: 1.40762
+Euploea_mulciber: 1.76952
+Idea_leuconoe: 3.16346
+N17: 2.45174
+N18: 2.01861
+Anetia_briarea: 1.024
+Anetia_pantheratus: 2.11658
+Lycorea_ilione: 3.31219
+Libythea_celtis: 12.2122
+Total number of gain events: 88.7353
+#+++++++++++++++++++++++++++++
+
+#Nodes with LOSS events with expectation above 0.5
+Tellervo_zoilus: 6.34753
+N3: 2.04862
+N4: 1.22889
+N5: 1.61315
+Amauris_tartarea: 3.78608
+N6: 3.53649
+Parantica_agleoides: 1.21561
+Parantica_melusine: 7.6133
+N8: 2.66776
+N9: 2.71138
+N11: 0.861485
+Danaus_chrysippus: 1.85739
+N12: 1.77904
+Danaus_genutia: 2.0356
+N13: 2.64781
+Danaus_plexippus: 0.656314
+N14: 3.13481
+N15: 3.16527
+N16: 1.66033
+Euploea_corinna: 1.10563
+Euploea_mulciber: 2.28045
+Idea_leuconoe: 3.01204
+N17: 2.35452
+N18: 1.59763
+Anetia_briarea: 0.819852
+Anetia_pantheratus: 1.91244
+Lycorea_ilione: 3.68707
+Libythea_celtis: 11.5483
+Total number of loss events: 80.8415
+#+++++++++++++++++++++++++++++
+
+#Nodes with duplication events with expectation above 0.5
+Total number of duplication events: 0
+#+++++++++++++++++++++++++++++
+
+#Nodes with demi-duplication events with expectation above 0.5
+Total number of demi-dulications events: 0
+#+++++++++++++++++++++++++++++
+
+#+++++++++++++++++++++++++++++
+
+#Nodes with transitions in base number with expectation above 0.5
+Total number of transitions in base number: 0
+#+++++++++++++++++++++++++++++
+
+#EVENTS NOT ACCOUNTED FOR IN THE SIMULATIONS: 
+N5:ML=31 to Amauris_tartarea:ML=37=0.2_38=0.48_39=0.25_40=0.07  sum expections= 14.7123
+	HEURISTIC ESTIMATION:	Gains = 7.19	Losses = 0	Duplications = 0	Demi-dupl = 0
+N11:ML=30 to Danaus_chrysippus:ML=30=0.5_31=0.5  sum expections= 4.43185
+	HEURISTIC ESTIMATION:	Gains = 0.5	Losses = 0	Duplications = 0	Demi-dupl = 0
+N12:ML=30 to Danaus_eresimus:ML=29=0.5_30=0.5  sum expections= 0.322812
+	HEURISTIC ESTIMATION:	Gains = 0	Losses = 0.5	Duplications = 0	Demi-dupl = 0
+N12:ML=30 to Danaus_gilippus:ML=29=0.5_30=0.5  sum expections= 0.18565
+	HEURISTIC ESTIMATION:	Gains = 0	Losses = 0.5	Duplications = 0	Demi-dupl = 0
+N14:ML=33 to Tirumala_hamata:ML=31=0.02_32=0.07_33=0.4_34=0.27_35=0.2_36=0.04  sum expections= 0.498596
+	HEURISTIC ESTIMATION:	Gains = 0.79	Losses = 0.07	Duplications = 0	Demi-dupl = 0
+N14:ML=33 to Tirumala_septentrionis:ML=32=0.52_33=0.37_34=0.11  sum expections= 0.744339
+	HEURISTIC ESTIMATION:	Gains = 0.11	Losses = 0.52	Duplications = 0	Demi-dupl = 0
+N16:ML=30 to Euploea_mulciber:ML=29=0.83_30=0.17  sum expections= 4.04998
+	HEURISTIC ESTIMATION:	Gains = 0	Losses = 0.83	Duplications = 0	Demi-dupl = 0
+#+++++++++++++++++++++++++++++
+
+#ALL EVENTS EXPECTATIONS PER NODE
+NODE	GAIN	LOSS	DUPLICATION	DEMI-DUPLICATION	BASE-NUMBER
+N2	3.46956e-05	6.999e-06	0	0	0
+Tellervo_zoilus	8.01142	6.34753	0	0	0
+N3	1.99018	2.04862	0	0	0
+N4	1.25022	1.22889	0	0	0
+N5	2.04758	1.61315	0	0	0
+Amauris_tartarea	7.19	0	0	0	0
+N6	1.69539	3.53649	0	0	0
+Parantica_agleoides	5.31897	1.21561	0	0	0
+Parantica_melusine	0.860085	7.6133	0	0	0
+N7	0.38599	0.441781	0	0	0
+N8	2.90324	2.66776	0	0	0
+N9	1.8233	2.71138	0	0	0
+N10	0.425429	0.358272	0	0	0
+N11	0.955481	0.861485	0	0	0
+Danaus_chrysippus	0.5	0	0	0	0
+N12	1.5518	1.77904	0	0	0
+Danaus_eresimus	0	0.5	0	0	0
+Danaus_gilippus	0	0.5	0	0	0
+Danaus_genutia	2.37791	2.0356	0	0	0
+N13	1.63626	2.64781	0	0	0
+Danaus_erippus	1.74095	0.319918	0	0	0
+Danaus_plexippus	0.0773485	0.656314	0	0	0
+N14	5.51212	3.13481	0	0	0
+Tirumala_hamata	0.79	0.07	0	0	0
+Tirumala_septentrionis	0.11	0.52	0	0	0
+N15	2.77071	3.16527	0	0	0
+N16	1.50977	1.66033	0	0	0
+Euploea_corinna	1.40762	1.10563	0	0	0
+Euploea_mulciber	0	0.83	0	0	0
+Idea_leuconoe	3.16346	3.01204	0	0	0
+N17	2.45174	2.35452	0	0	0
+N18	2.01861	1.59763	0	0	0
+Anetia_briarea	1.024	0.819852	0	0	0
+Anetia_pantheratus	2.11658	1.91244	0	0	0
+Lycorea_ilione	3.31219	3.68707	0	0	0
+Libythea_celtis	12.2122	11.5483	0	0	0
+#+++++++++++++++++++++++++++++
+
+#Expected number of events from root to leaf
+LEAF	GAIN	LOSS	DUPLICATION	DEMI-DUPLICATION	BASE-NUMBER
+Tellervo_zoilus	8.01145	6.34754	0	0	0
+Amauris_tartarea	12.478	4.89066	0	0	0
+Parantica_agleoides	12.3024	9.64277	0	0	0
+Parantica_melusine	7.84349	16.0405	0	0	0
+Danaus_chrysippus	10.2339	10.3182	0	0	0
+Danaus_eresimus	11.2857	12.5972	0	0	0
+Danaus_gilippus	11.2857	12.5972	0	0	0
+Danaus_genutia	11.1563	11.4923	0	0	0
+Danaus_erippus	11.7302	12.0662	0	0	0
+Danaus_plexippus	10.0666	12.4026	0	0	0
+Tirumala_hamata	12.8318	9.59186	0	0	0
+Tirumala_septentrionis	12.1518	10.0419	0	0	0
+Euploea_corinna	9.31453	9.65053	0	0	0
+Euploea_mulciber	7.90691	9.3749	0	0	0
+Idea_leuconoe	9.56059	9.89661	0	0	0
+Anetia_briarea	7.48456	6.82064	0	0	0
+Anetia_pantheratus	8.57715	7.91322	0	0	0
+Lycorea_ilione	7.75415	8.09022	0	0	0
+Libythea_celtis	12.2122	11.5483	0	0	0

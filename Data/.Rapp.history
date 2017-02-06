@@ -1,0 +1,63 @@
+source("http://bioconductor.org/biocLite.R")#
+biocLite()
+update.packages()
+library("RGtk2")
+library("RGtk2")
+upadte.packages()
+update.packages()
+set.seed(89623578)
+setwd("~/Desktop/Projects/Danainae/Data")
+library("phytools")
+library("geiger")
+(see <- sessionInfo())
+Dan <- read.tree("Bayes/Danainae_cat.nex.con.tre")
+Dan <- read.nexus("Bayes/Danainae_cat.nex.con.tre")
+plot(Dan)
+is.ultrametric(Dan)
+lam <- 10^(-1:6)
+cv <- sapply(lam, function(x) sum(attr(chronopl(Dan, lambda = x, CV = TRUE), "D2")))
+plot(lam, cv, pch = 19, ylab = "cross-validation score",
+xlab = expression(paste(lambda)), las = 1, cex = 1.5) # lowest CV
+cv
+plot(lam, cv, pch = 19, ylab = "cross-validation score", xlab = expression(paste(lambda)), las = 1, cex = 1.5) # lowest CV
+plot(lam, cv, pch = 19, ylab = "cross-validation score", xlab = expression(paste(lambda)), las = 1, cex = 1.5, ylim = c(-1000, 1000)) # lowest CV
+cv
+lam
+1e4
+10^4
+Dan2 <- chronopl(phy = Dan, lamdba = 1e4, CV = TRUE, eval.max = 1e3, iter.max = 1e4)
+Dan2 <- chronopl(phy = Dan, lambda = 1e4, CV = TRUE, eval.max = 1e3, iter.max = 1e4)
+is.ultrametric(Dan2)
+plot.tree(Dan2)
+plottree(Dan2)
+?plot.tree
+??plot.phylo
+plot.phylo(Dan2)
+plot(Dan2)
+is.root
+is.root(Dan2)
+is.root(phy = Dan2)
+?plot.phylo
+Dan2
+Dan2$tip.labels
+Dan2$tip.label
+Dan2 <- root(phy = Dan2, outgroup = "Tellervo_zoilus")
+plot.phylo(Dan2)
+is.rooted(Dan2)
+Dan2 <- root(phy = Dan2, outgroup = "Tellervo_zoilus")
+is.rooted(Dan2)
+Dan2 <- root(phy = Dan2, outgroup = 39)
+is.rooted(Dan2)
+Dan2 <- root(phy = Dan2, outgroup = 39, r = TRUE)
+is.rooted(Dan2)
+plot.phylo(Dan2)
+Dan2 <- root(phy = Dan2, outgroup = 39, resolve.root = TRUE)
+is.rooted(Dan2)
+plot.phylo(Dan2)
+plot.phylo(Dan2, type = "phylogram", use.edge.length = TRUE)
+plot.phylo(Dan2, type = "phylogram", use.edge.length = TRUE, edge.width = 2)
+plot.phylo(Dan2, type = "phylogram", use.edge.length = TRUE, edge.width = 2, cex = 0.8)
+plot.phylo(Dan2, type = "phylogram", use.edge.length = TRUE, edge.width = 2, cex = 0.8, no.margin = TRUE)
+plot.phylo(Dan2, type = "phylogram", use.edge.length = TRUE, edge.width = 2, cex = 0.8, no.margin = TRUE, root.edge = TRUE)
+plot.phylo(Dan2, type = "phylogram", use.edge.length = TRUE, edge.width = 2, cex = 0.8, no.margin = TRUE)
+plot.phylo(Dan2, type = "cladogram", use.edge.length = TRUE, edge.width = 2, cex = 0.8, no.margin = TRUE)

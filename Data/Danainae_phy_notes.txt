@@ -1,0 +1,41 @@
+# Danainae phylogeny notes
+
+# 19 March 2016
+# A few of the accession numbers do not match
+AY218523 is Suillus_cavipes
+
+# there is a Lethe sequence, removed. Added Libythea celtis as a proper outgroup.
+
+begin mrbayes;
+	outgroup Tellervo_zoilus;
+	charset mtDNA = 1-2202;
+	charset EF1a = 2203-3412;
+	charset wg = 3413-3789;
+	
+	
+	partition loci = 3: mtDNA, EF1a, wg;
+	set partition = loci;
+	
+	
+	
+lset applyto=(mtDNA) nst=6  rates=invgamma;
+prset applyto=(mtDNA) statefreqpr=dirichlet(1,1,1,1);
+
+lset applyto=(EF1a) nst=6  rates=invgamma;
+prset applyto=(EF1a) statefreqpr=dirichlet(1,1,1,1);
+
+lset applyto=(wg) nst=6  rates=gamma;
+prset applyto=(wg) statefreqpr=fixed(equal);
+unlink statefreq=(all) revmat=(all) shape=(all) pinvar=(all);
+mcmc nchains=10 nswaps=4 ngen=1000000 samplefreq=5000 printfreq=200000 diagnfreq=500;
+
+
+MrBayes execution code
+
+mpirun -n 6 mb Danaini_cat.nex > out.txt
+
+
+#### Now using chromEvol
+# running model with Linear rate and no genome duplication
+
+Models show that gains are not 10x less likely than losses. More like even. Ooooo!
