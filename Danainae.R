@@ -8,7 +8,7 @@ library("phytools")
 
 (sess <- sessionInfo())
 
-setwd("~/Desktop/Projects/Danainae/")
+setwd("~/Desktop/Projects/Monarch_haplotype/")
 
 # save(list = ls(), file = "Danainae_data.RData")
 # load("Danainae_data.RData")
@@ -23,7 +23,7 @@ sort(branching.times(Dan))
 lam <- 10^(-1:6)
 cv <- sapply(lam, function(x) sum(attr(chronopl(Dan , lambda = x, CV = TRUE), "D2")))
 cv
-plot(x = lam, y = cv, pch = 19, ylab = "cross-validation score", xlab = expression(paste(lambda)), las = 1, cex = 1.5) # lowest CV is alpha 1e4, suggests that branches each have different rates
+plot(x = lam, y = cv, pch = 19, ylab = "cross-validation score", xlab = expression(paste(lambda)), las = 1, cex = 1.5) # lowest CV is alpha 1e6, suggests that branches each have different rates
 
 
 Dan2 <- chronopl(phy = Dan, lambda = 1e6, CV = TRUE, eval.max = 1e3, iter.max = 1e4)
@@ -41,7 +41,7 @@ Dan_data
 
 
 Dan <- root(phy = Dan, outgroup = "Libythea_celtis", resolve.root = TRUE)
-Dan_norm <- treedata(phy = Dan, data = Dan_data, sort = TRUE, warnings = TRUE)
+Dan_norm <- treedata(phy = Dan2, data = Dan_data, sort = TRUE, warnings = TRUE)
 is.rooted(Dan_norm$phy)
 plot.phylo(Dan_norm$phy)
 #ape::write.tree(Dan_norm$phy, file = "Dan_norm.tre", digits = 10, tree.names = FALSE)
@@ -70,17 +70,33 @@ Covs_cols
 dotTree(Dan_norm$phy, Covs, method = "plotTree", legend = TRUE, standardize = FALSE, data.type = "discrete")
 
 
+# Figure for pre-print
+Covs2 <- as.matrix(Covs)[, 1]
+seq1 <- seq(from = 20, to = 36)
+ancs <- c(31, 31, 31, 29, 31, 31, 31, 30, 30, 30, 30, 28, 33, 30, 30, 31, 31)
+sa <- cbind(seq1, ancs)
+
+# pdf(file = "Images/Dan_phylo.pdf", bg = "white")
+ tiff(file = "Images/Dan_phylo.tiff", bg= "white", height = 720, width = 520, units = "px", compression = "none")
+plot.phylo(Dan_norm$phy, align.tip.label = TRUE, type = "phylogram", use.edge.length = TRUE, edge.width = 2, root.edge = TRUE, no.margin = TRUE, adj = 0)
+# tiplabels(text = Covs2, adj = -9.3, frame = "none", bg = "white")
+tiplabels(text = Covs2, adj = 1.2, frame = "rect", bg = "white")
+nodelabels(text = sa[, 2], frame = "rect", bg = "white")
+ dev.off()
 
 
 
 
 
 
-
-phylo.heatmap(Dan_norm$phy, Covs, fsize = c(1, 1.5, 1))
-
+phylo.heatmap(Dan_norm$phy, Covs)
 
 
+
+
+plotTree.wBars(Dan_norm$phy, Covs2, type = "phylogram", method = "plotTree", scale = 0.005, tip.labels = TRUE) # not a fan of this look, not enough to distinguish.
+
+plotTree.barplot(Dan_norm$phy, Covs2, args.barplot = list(xlim = c(20, 40)))
 
 
 

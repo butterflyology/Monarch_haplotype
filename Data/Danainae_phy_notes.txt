@@ -1,6 +1,6 @@
 # Danainae phylogeny notes
 
-# 19 March 2016
+# 2016-03-19
 # A few of the accession numbers do not match
 AY218523 is Suillus_cavipes
 
